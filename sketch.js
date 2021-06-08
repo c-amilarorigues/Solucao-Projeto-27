@@ -58,11 +58,11 @@ function draw() {
 
   Engine.update(engine);
 
-  // Title
+  // Título
   fill("#FFFF");
   textAlign("center");
   textSize(40);
-  text("EPIC ARCHERY", width / 2, 100);
+  text("ARQUEARIA ÉPICA", width / 2, 100);
 
   for (var i = 0; i < playerArrows.length; i++) {
     showArrows(i, playerArrows);
@@ -166,7 +166,7 @@ function handlePlayerArrowCollision() {
       archerCollision.collided ||
       computerCollision.collided
     ) {
-      console.log("Player Arrow Collided")
+      console.log("Flecha do Jogador Colidiu")
     }
   }
 }
@@ -194,7 +194,7 @@ function handleComputerArrowCollision() {
       playerCollision.collided
     )
     {
-      console.log("Computer Arrow Collided")
+      console.log("Flecha do Computador Colidiu")
     }
   }
 }
